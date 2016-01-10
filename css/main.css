@@ -3,26 +3,30 @@
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-.logo {
-	float: left;
+
+
+.nav > li > a:hover, .nav > li > a:focus {
+	background: none;
 }
 
-
-.navbar .navbar-collapse li {
-	display: inline-block;
+@media only screen and (max-width: 1199px) {
+	.navbar .search {
+		left: 76%;
+	}
 }
 
-
-.navbar .navbar-form {
-	float: right;
+@media only screen and (max-width: 991px) {
+	.navbar .search {
+		left: 68%;
+	}
 }
 
+@media only screen and (max-width: 767px) {
+	.navbar .search img {
+		float: left;
+	}
 
-
-.call_to_action h3 {
-	font-weight: bold;
-	font-variant: small-caps;
+	.navbar .search {
+		left: 20px;
+	}
 }
-
-
-
